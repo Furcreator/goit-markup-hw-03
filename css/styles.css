@@ -49,12 +49,19 @@ a {
 /* КОНТЕЙНЕР */
 
 .container {
-  width: 1230px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
+.section {
+  padding: 94px 0;
+}
+
+.title {
+  margin-bottom: 50px;
+}
 /* основной цвет текста #212121 */
 /* вторичный цвет текста #757575 */
 /* цвет главного текста шапки и полного фона #FFFFFF */
@@ -157,9 +164,6 @@ main {
 
 /* first section */
 .hat {
-  padding-top: 180px;
-  padding-bottom: 300px;
-  margin-bottom: 74px;
   background-color: var(--color-futter);
   color: var(--font--color);
   letter-spacing: 0.06em;
@@ -203,6 +207,10 @@ main {
 
 /* second section */
 
+.hang {
+  padding-bottom: 0;
+}
+
 .hang-list {
   display: flex;
 }
@@ -244,7 +252,6 @@ main {
 /* third section */
 
 .ocup-title {
-  margin: 0 auto;
   margin-top: 94px;
   margin-bottom: 50px;
   color: var(--primary-text-color);
@@ -263,10 +270,6 @@ main {
 
 /* four section */
 
-.container > h2 {
-  padding-bottom: 50px;
-}
-
 .team {
   padding-top: 94px;
   padding-bottom: 88px;
@@ -274,7 +277,6 @@ main {
 }
 
 .team h2 {
-  margin: 0 auto;
   color: var(--primary-text-color);
   font-size: 36px;
   line-height: 1.2;
@@ -366,14 +368,11 @@ main {
 
 /* MAIN */
 
-.main-posters {
-  padding: 94px 215px;
-}
 
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filter-list-item:not(:last-child) {
@@ -410,7 +409,7 @@ main {
 }
 
 .posters-list {
-  flex-basis: calc((100% - 60px)/3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .posters li {
